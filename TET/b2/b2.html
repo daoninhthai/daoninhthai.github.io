@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		textarea{
+			border: 1px solid black;
+			font-size: 21px;
+		}
+		td{
+			border: 1px solid black;
+		
+			width: 49px;
+			text-align: center;
+			height: 40px;
+		}
+
+	</style>
+</head>
+<body>
+	 <textarea id="in" cols="23" readonly></textarea>
+	<table>
+		<tr>
+			<td onclick="press(this)">7</td>
+			<td onclick="press(this)">8</td>
+			<td onclick="press(this)">9</td>
+			<td >DEL</td>
+			<td>AC</td>
+		</tr>
+		<tr>
+			<td onclick="press(this)">4</td>
+			<td onclick="press(this)">5</td>
+			<td onclick="press(this)">6</td>
+			<td onclick="press(this)">x</td>
+			<td onclick="press(this)">/</td>
+		</tr>
+		<tr>
+			<td onclick="press(this)">1</td>
+			<td onclick="press(this)">2</td>
+			<td onclick="press(this)">3</td>
+			<td onclick="press(this)">+</td>
+			<td onclick="press(this)">-</td>
+		</tr>
+		<tr>
+			<td onclick="press(this)">0</td>
+			<td onclick="press(this)">.</td>
+			<td onclick="press(this)">x10</td>
+			<td onclick="press(this)">Ans</td>
+			<td>=</td>
+
+		</tr>
+	</table>
+	<script type="text/javascript">
+		a=[''];
+		function press(button) {
+			var a=button.innerHTML;
+			var b=document.getElementById("in").innerHTML =a;
+			
+
+
+		}
+	</script>
+</body>
+</html>

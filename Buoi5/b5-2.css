@@ -1,0 +1,39 @@
+.item{
+	display: flex;
+}
+.img img{
+	
+	width: 100%;
+	
+}
+.img{
+	flex:20%;
+	margin:20px;
+	position: relative;
+	overflow: hidden;
+}
+img{
+	overflow: hidden;
+	width: 100%;
+}
+.overlay{
+	position: absolute;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left: 0;
+	
+}
+.overlay img{
+	opacity: 0.5;
+}
+.img:hover .overlay{
+	
+
+}
+.img:hover img{
+	
+	opacity: 0.5;
+
+}

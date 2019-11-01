@@ -1,0 +1,92 @@
+*{
+    list-style: none;
+}
+body {
+    box-sizing: border-box;
+    list-style: none;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 30px;
+   
+}
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:20px;
+}
+.menu-left{
+    grid-column: 2/8;
+    margin:10px
+    
+}
+.menu-left {
+    display: flex;
+    list-style: none;
+    
+    
+}
+.menu-left ul{
+    display: flex;
+    list-style: none;
+    
+    
+}
+.menu-right {
+    grid-column: 9/13;
+    margin:10px;
+    margin-left: 10px;
+    
+}
+
+.menu-right ul{
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    
+}
+ul li{
+    margin-left: 20px;
+}
+.banner img{
+    width: 100%;
+}
+
+.item{
+    margin-top: 20px;
+  grid-column: span 3;
+ 
+}
+ .item img{
+    width: 100%;
+     max-width: 1200px;
+     
+ }
+ .banner img{
+    grid-column: span 12;
+    height: 425px;
+    object-fit: cover;
+ }
+ #theodoi{
+     grid-column: 1/3;
+     font-size: 19px;
+     display: block-inline;
+     
+ }
+ a img{
+     padding-top: 10px;
+
+ }
+ .fitem{
+     grid-column: span 2;
+ }
+ 
+
+    /* Apply debounce to prevent rapid calls */
+    /* Apply debounce to prevent rapid calls */

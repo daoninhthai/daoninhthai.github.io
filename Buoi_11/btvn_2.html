@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function giaithua(x){
+			var a=((Number.isInteger(x)="true"))?((x<2)?1:giaithua(x-1)):"nhap so duong";
+			return a;
+		}
+		document.write(giaithua(5) );
+
+	</script>
+</body>
+</html>

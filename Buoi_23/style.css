@@ -1,0 +1,126 @@
+*{  padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+body{
+    margin:0 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20x;
+}
+.item {
+    
+    
+    
+   
+}
+.navleft{
+   
+    grid-column: 2/12;
+}
+.navright{
+    grid-column: 12/13;
+}
+.logo{
+    grid-column: 1/2;
+}
+.banner img{
+    height: 350px;
+    width: 100%;
+    grid-column: span 12;
+}
+.banner{
+    width: 100%;
+   
+    margin-top:10px;
+    position: relative;
+}
+.card li{
+    width: 100%;
+    display:grid;
+    grid-column: span 3;
+        
+}
+.card {
+    gap:10px;
+    
+    
+    
+}
+li img{
+    
+    width: 100%;
+    
+    
+}
+.xbox img{
+   width: 100%;
+   height: 300px;
+    object-fit: cover;
+    grid-column: span 12;
+}
+.social{
+    display: flex;
+    align-items: center;
+    
+}
+.social img{
+    width: 3%;
+    height: 3%;
+    margin: ;
+    margin-left: 20px;
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left:20%;
+
+}
+.carbon{
+    width: 100%;
+    position: relative;
+}
+.carbon img{
+    width: 100%;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 0 20px;
+}
+footer{
+    background: #f2f2f2;
+    color :#616161;
+    padding: 20px 0;
+}
+footer-inner{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.footer div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer-inner ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-inner li{
+    margin-left: 10px;
+}
+
+
+

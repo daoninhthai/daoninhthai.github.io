@@ -1,0 +1,35 @@
+.container-fruid{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	margin:0 550px;
+
+}
+.item{
+	margin-left: 50px;	
+	display: flex;
+	margin-top:20px;
+	border-bottom: 1px solid black;
+}
+.item img{
+	width: 80px;
+
+
+}
+.info{
+	margin-left: 20px;
+}
+.container-right {
+	margin-left:10px;
+	border-left: 1px solid black;
+}
+.container-left{
+	margin-right: 30px;
+}
+h2{
+	text-align: center;
+}
+.item:last-child{
+	border-bottom: none;
+}

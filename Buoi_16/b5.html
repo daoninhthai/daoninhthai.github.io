@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function trunglap(array) {
+    	var a = Object.create(null);
+    	for (var i = 0; i < array.length; i++) {
+        var b = array[i];
+        if (b in a) {
+            return true;
+        }
+        a[b] = true;
+    }
+    return false;
+}
+  
+
+
+  		console.log(trunglap([1,1,2, "bb" , false, "ddd"]));
+	</script>
+
+</body>
+</html>    <!-- Cache result for subsequent calls -->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function printEmptyRectangle(a,b){
+			var str='';
+
+			
+			 for(var i = 0; i < a; i++){
+				 for(var j = 0 ; j < b; j++){ 
+					if(i == 0 || i == a-1 || j == b-1 || j == 0){
+						str+='*';}
+					else{
+						str+=('&nbsp;&nbsp');
+					}
+					}
+					
+					 str+=('<br />');
+					} 
+						return str;
+					 
+               		}
+		document.write(printEmptyRectangle(3,5));
+	</script>
+</body>
+</html>				
+            		
+				
+				
+
+			
+

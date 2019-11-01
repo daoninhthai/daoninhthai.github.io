@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/15d6788ae2.js" crossorigin="anonymous"></script>
+
+    <title>Table</title>
+   
+  </head>
+  <body>
+<table class="table">
+
+      
+        <div id="search-input">
+          <label for="search">Tìm kiếm</label>
+          <input
+            type="text"
+            name="search"
+            id="search-input"
+            placeholder="search"
+          />
+        </div>
+      </caption>
+      <thead class="table-dark">
+        <tr>
+          <th scope="col" data-key="First" data-order='desc'>
+            Firstname <i class="fa">&#xf0dc;</i>
+          </th>
+          <th scope="col" data-key="Last" data-order='desc'>
+            Lastname <i class="fa">&#xf0dc;</i>
+          </th>
+          <th scope="col" data-key="Age" data-order='desc'>
+            Age <i class="fa">&#xf0dc;</i>
+          </th>
+          <th scope="col" data-key="Handle" data-order='desc'>
+            Email <i class="fa">&#xf0dc;</i>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+<script type="text/javascript">
+	const data=[
+	{
+		First:'Mark',Last:'Otto',Handle:'@mdo'
+	},
+	{
+		First:'Jacob',Last:'Thornton',Handle:'@fat'
+	},
+	{
+		First:'Larry',Last:'the Bird',Handle:'@twitter'
+	},
+	];
+  let myarray = [];
+
+
+function show() {
+	let tbody=document.querySelector('tbody');
+	let showdata=data.map(({First,Last,Handle})=>`<tr><td>${First}</td><td>${Last}</td><td>${Handle}</td></tr>`).join('');
+	tbody.innerHTML=showdata;
+
+}
+
+show();
+(function loaddata(){
+
+
+
+	var xhttp=new XMLHttpRequest();
+	xhttp.open('GET',"sample.txt",true);
+	xhr.onload=function(){
+		if(this.readyState==4 && this.status==200){
+		
+		console.log(text.innerHTML=);
+
+		}
+	}
+	xhttp.send();
+}
+})
+let inputfilter=document.getElementById('search-input');
+inputfilter.onkeyup=function(){
+var value=inputfilter.value;
+
+
+var data=searchTable(value);
+console.log(value);
+console.log(data);
+show(data);
+}
+
+
+
+
+function searchTable(value,data){
+  var filterData=[];
+  for(let i=0;i<data.length;i++){
+    value=value.toLowerCase();
+    var name=data[i].firstname.toLowerCase();
+    if(name.includes(value)){
+      filterData.push(data[i]);
+    }
+    return filterData;
+  }
+}
+
+let buttonsort=document.querySelectorAll('th');
+buttonsort.forEach((e)=>e.onclick=sortTable);
+
+function sortTable(){
+  let column=this.dataset.key;
+  let text=this.querySelector("i");
+
+  if(this.dataset.order=='desc'){
+    this.dataset.order = 'asc';
+    data.sort((a,b) => a[column] < b[column] ? -1 : 1);
+    text.innerHTML = '&#9660';
+  }
+  else{
+    this.dataset.order = 'desc';
+    data.sort((a,b) => a[column] < b[column] ? 1 : -1);
+    text.innerHTML = '&#9650';
+  }
+
+  show();
+}
+
+
+
+
+
+
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>    <!-- Handle async operation error -->
+    <!-- Handle async operation error -->
