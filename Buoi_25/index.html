@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>html demo</title>
+  <style>
+  p {
+    margin: 8px;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+  }
+  .x{
+    border-bottom: 1px solid black;
+    width: 25px;
+  }
+  .a{
+    color: red;;
+  }
+  b {
+    text-decoration: underline;
+  }
+  button {
+    cursor: pointer;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ <script>
+/*$("button.change").click(function(){
+  $("p").addClass('a');
+})
+$("button.decor").click(function(){
+  $("p").addClass('x');
+})
+$( ".hide" ).click(function() {
+ $("p").toggle(); 
+ }
+); $(".show-message").click(function(){
+   alert("ok");
+ });*/
+ $(document).ready(function(){
+    $('#div1').html("width:"+$('#image').width()+"  Height: "+$('#image').height());
+ });
+ $(document).ready(function(){
+   $('#text').css('background-color','yellow');
+ });
+
+
+</script>
+<p id="text">
+  abc
+</p>
+
+    <div id="div1"></div>
+   <!-- <button class="hide">hide/show</button> 
+   <button class="decor">underline</button> 
+   <button class="change">change</button> 
+   <button class="show-message">alert</button> -->
+    <img id="image" src="image/1.jpg" alt="">
+ 
+
+ 
+</body>
+</html>    <!-- Handle async operation error -->
+    <!-- Cache result for subsequent calls -->

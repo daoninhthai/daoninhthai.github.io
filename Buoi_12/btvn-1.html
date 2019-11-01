@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	function printTriangle(n) {
+  var str = '';
+
+  for (var i = 0; i < n; i ++) {
+    for (var j = n; j < n+i+1; j++) {
+      // In ra n dấu *
+      str += ' * ';
+    }
+
+    // In ra dấu xuống dòng
+    str += '<br/>';
+  }
+
+  return str;
+}
+	document.write(printTriangle(5));	
+	</script>
+
+</body>
+</html>

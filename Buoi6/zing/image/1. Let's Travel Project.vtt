@@ -1,0 +1,1008 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.400 --> 00:00:06.440
+Hey there.
+
+00:00:06.440 --> 00:00:10.840
+So we just completed learning bootstrap, so
+now we’re going to create a website using
+
+00:00:10.840 --> 00:00:11.800
+bootstrap.
+
+00:00:12.160 --> 00:00:18.000
+And this is the site we’re going to create:
+basically a travel website with articles on
+
+00:00:18.000 --> 00:00:20.160
+various landmarks around the world.
+
+00:00:20.880 --> 00:00:24.640
+This website consists of the top part, our
+menu that is.
+
+00:00:25.360 --> 00:00:28.160
+And here we have a type of brand for our logo.
+
+00:00:28.340 --> 00:00:34.120
+So here we’re going to have a menu, here
+an input field, and here a submit button so
+
+00:00:34.120 --> 00:00:38.380
+that you get contacted after submitting your
+phone number.
+
+00:00:38.380 --> 00:00:43.140
+Here we’re going to have a slider with a
+series of images and their respective captions.
+
+00:00:45.060 --> 00:00:50.120
+Next, we’re going to have a number of postcards,
+with descriptions of famous cities and corresponding
+
+00:00:50.120 --> 00:00:51.140
+pictures.
+
+00:00:51.960 --> 00:00:57.120
+And also we’ll have a footer, that’s going
+to have the copyright and a contact us button.
+
+00:00:57.120 --> 00:00:58.260
+So, let’s begin.
+
+00:00:58.740 --> 00:01:02.540
+We’ll begin by creating a new folder that
+we’ll simply call site.
+
+00:01:04.040 --> 00:01:08.780
+Then open it and create the basic structure
+for pretty much any website.
+
+00:01:08.780 --> 00:01:11.000
+We’ll have one folder called CSS.
+
+00:01:12.960 --> 00:01:15.520
+Another one that we’ll call images.
+
+00:01:18.080 --> 00:01:20.640
+And then another one called JS.
+
+00:01:21.920 --> 00:01:25.160
+Next we need a file called index.html.
+
+00:01:26.520 --> 00:01:35.320
+For that we open up Sublime, click on File,
+New File.
+And save.
+
+00:01:38.080 --> 00:01:42.080
+We save it in the main Site folder as index.html.
+
+00:01:46.080 --> 00:01:51.200
+Then we need a file for our styles, which
+is going to be our style.css file.
+
+00:01:56.120 --> 00:01:58.760
+And we save that in the CSS folder.
+
+00:02:01.920 --> 00:02:03.480
+Got that.
+
+00:02:03.480 --> 00:02:07.400
+Now in index.html let’s set up the basic
+mockup.
+
+00:02:07.840 --> 00:02:11.680
+For that we can just write the exclamation
+mark and then hit tab.
+
+00:02:14.400 --> 00:02:17.600
+As the title we can write: Let’s travel!
+
+00:02:21.760 --> 00:02:24.160
+Then we’re going to connect to our styles.
+
+00:02:35.680 --> 00:02:36.400
+Great.
+
+00:02:36.400 --> 00:02:40.020
+Now the next thing we need to do is connect
+bootstrap.
+
+00:02:40.020 --> 00:02:43.000
+For that we first of all need to download
+it.
+
+00:02:43.000 --> 00:02:46.360
+So let’s go to Google and search for bootstrap
+4.
+
+00:02:51.240 --> 00:02:53.000
+Click on Download Bootstrap.
+
+00:02:56.960 --> 00:02:59.120
+And then once again Download Bootstrap.
+
+00:03:08.880 --> 00:03:13.280
+As you see, here we have a file with bootstrap
+that just got downloaded.
+
+00:03:15.840 --> 00:03:18.400
+So here we have our downloaded folder.
+
+00:03:19.680 --> 00:03:24.240
+And inside there are two more folders: CSS
+and JS.
+
+00:03:24.960 --> 00:03:28.800
+From the CSS folder we need bootstrap.min.css.
+
+00:03:29.040 --> 00:03:34.160
+We just go ahead and copy it and then paste
+it into our CSS folder.
+
+00:03:41.840 --> 00:03:44.080
+We also need JS.
+
+00:03:44.080 --> 00:03:44.960
+Why?
+
+00:03:44.960 --> 00:03:49.680
+Because we’re going to create a slider,
+which is going to be done using JavaScript.
+
+00:03:50.080 --> 00:03:55.520
+So let’s copy bootstrap.min.js and paste
+it into the JS folder.
+
+00:03:58.080 --> 00:04:00.760
+Ok, next we need to connect bootstrap.
+
+00:04:01.360 --> 00:04:06.460
+So for that, before the style.css we write: link, rel=stylesheet,
+
+00:04:08.800 --> 00:04:13.660
+and for href we indicate css/bootstrap.min.css.
+
+00:04:15.540 --> 00:04:20.180
+And let’s also go ahead and connect JS right before the end &lt;body&gt; tag.
+
+00:04:20.540 --> 00:04:22.540
+For that we write script,
+
+00:04:27.340 --> 00:04:35.080
+and then as the src we specify the path to our JS file, js/bootstrap.min.js.
+
+00:04:38.120 --> 00:04:45.180
+But, as we know, to work with bootstrap, we need to connect 2 libraries, namely jQuery and Popper.
+
+00:04:45.520 --> 00:04:48.460
+So let’s connect these libraries with the help of CDN.
+
+00:04:48.900 --> 00:04:52.080
+For that, we go to the official bootstrap website.
+
+00:04:52.520 --> 00:04:53.900
+Scroll down a little bit.
+
+00:04:54.240 --> 00:04:58.080
+And right here we need this first line which is the jQuery library,
+
+00:05:02.040 --> 00:05:04.800
+, and the second one which is the Popper library.
+
+00:05:05.120 --> 00:05:11.080
+Ok, we copy these lines and paste them straight before the bootstrap.min.js.
+
+00:05:13.360 --> 00:05:14.920
+Ok. Great.
+
+00:05:15.200 --> 00:05:20.720
+Everything is connected now. Now we can move on to the mockup of the page itself.
+
+00:05:24.440 --> 00:05:32.280
+As you see, our site consists of three parts: the header, the main part, and then the footer at the bottom.
+
+00:05:33.400 --> 00:05:38.320
+So we can go ahead and create these three tags: &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt;.
+
+00:05:53.560 --> 00:05:55.280
+What do we have in the header?
+
+00:05:55.280 --> 00:06:00.200
+If we look at it, this is the common structure for a typical bootstrap navbar.
+
+00:06:00.200 --> 00:06:07.880
+So let’s go back to the bootstrap 4 website, go to Documentation, and then select Components.
+
+00:06:10.640 --> 00:06:13.160
+In the Components we look for Navbar.
+
+00:06:20.560 --> 00:06:23.480
+And as you can see, it’s the same kind of structure.
+
+00:06:23.760 --> 00:06:31.920
+So we’re just going to copy all of these and then paste it as our header.
+
+00:06:37.720 --> 00:06:39.720
+What are some differences?
+
+00:06:39.720 --> 00:06:44.920
+First of all, our site isn’t going to be called Navbar, but Let’s travel!
+
+00:06:50.280 --> 00:06:53.880
+Next we have the menu with the links to different pages.
+
+00:06:54.480 --> 00:06:58.120
+First of these is Home, which is the same for our site.
+
+00:06:58.120 --> 00:07:05.480
+Then after Home, let’s see, we have About us.
+
+00:07:05.960 --> 00:07:07.360
+So let’s change that.
+
+00:07:12.960 --> 00:07:15.920
+And finally the last link is Contacts.
+
+00:07:18.280 --> 00:07:22.200
+If you haven’t noticed, Contacts has a class called disabled.
+
+00:07:24.480 --> 00:07:25.720
+Which does what?
+
+00:07:29.080 --> 00:07:32.880
+It creates an inactive link like this one right here.
+
+00:07:34.240 --> 00:07:37.640
+We don’t need that so we can simply remove disabled.
+
+00:07:40.640 --> 00:07:45.000
+Next we see that this button right here has a blue color with a blue frame.
+
+00:07:46.800 --> 00:07:50.360
+But right now we have a green button with a green frame.
+
+00:07:52.920 --> 00:07:54.440
+How do we change that?
+
+00:07:54.440 --> 00:07:59.920
+All we have to do is for this class here that says btn-outline-success,
+
+00:08:00.640 --> 00:08:03.040
+we need to change the last word to primary.
+
+00:08:06.000 --> 00:08:12.320
+Also, we need to remove this placeholder here and add our own: so Phone number.
+
+00:08:17.000 --> 00:08:20.120
+And as the text we will add Call me.
+
+00:08:25.280 --> 00:08:27.720
+Let’s save and see what it looks like.
+
+00:08:29.560 --> 00:08:35.000
+There. Now our site has a great looking menu, almost just like in the original.
+
+00:08:36.320 --> 00:08:42.800
+The only difference is that in the original all the content of the navbar is placed within this container.
+
+00:08:46.680 --> 00:08:50.600
+So we need to create a &lt;div&gt; with a class called container.
+
+00:08:51.400 --> 00:08:55.560
+And this container is actually going to be placed within the navbar.
+
+00:08:56.720 --> 00:08:57.480
+Why within?
+
+00:08:58.280 --> 00:09:05.000
+Because if you look at it, here the &lt;nav&gt; itself, it spans the entire width of the page.
+
+00:09:05.000 --> 00:09:09.000
+So only the content of nav is limited by a width size.
+
+00:09:11.440 --> 00:09:14.600
+We cut out everything inside the nav tag.
+
+00:09:21.360 --> 00:09:22.920
+Then we add a container.
+
+00:09:24.880 --> 00:09:28.600
+And then in this container we paste back what we just cut out.
+
+00:09:31.040 --> 00:09:31.600
+There.
+
+00:09:33.040 --> 00:09:34.560
+Let’s refresh the page.
+
+00:09:36.200 --> 00:09:39.440
+And there we have it. Ok, great.
+
+00:09:41.280 --> 00:09:45.000
+Moving on. The next thing to do is this slider.
+
+00:09:45.480 --> 00:09:49.920
+The slider here is also a bootstrap component that’s called a carousel.
+
+00:09:51.320 --> 00:09:55.160
+So, in Components, locate the carousel element.
+
+00:09:55.160 --> 00:09:59.000
+And then we look for the same kind of slider that we have.
+
+00:10:02.320 --> 00:10:05.560
+Ok, so this one already looks kind of similar.
+
+00:10:06.040 --> 00:10:10.400
+However, on our site we also have the indicators that this one doesn’t have.
+
+00:10:14.960 --> 00:10:18.120
+And here it is with the indicators.
+
+00:10:20.960 --> 00:10:23.680
+So we can just copy this block of code here.
+
+00:10:27.000 --> 00:10:28.920
+And then add it to the &lt;main&gt; tag.
+
+00:10:34.960 --> 00:10:40.200
+We’ll just add a little comment right before our slider so that we remember what it is.
+
+00:10:47.960 --> 00:10:49.960
+What does our slider consist of?
+
+00:10:50.760 --> 00:10:58.760
+It consists of the indicators for the slides and then of the slides themselves contained in this carousel-inner class.
+
+00:11:00.160 --> 00:11:06.400
+However, even though this structure is very similar to what we need, it’s not identical.
+
+00:11:06.400 --> 00:11:09.760
+Because if you look at it, we also have these captions
+
+00:11:09.760 --> 00:11:13.040
+here with the name of landmark and of the city.
+
+00:11:13.560 --> 00:11:15.560
+And this slider doesn’t have that.
+
+00:11:17.920 --> 00:11:24.240
+In order to add the captions, Bootstrap says we need to add this block here, carousel-caption.
+
+00:11:26.160 --> 00:11:29.760
+So to each of our slides we’re going to add this caption.
+
+00:11:33.640 --> 00:11:38.960
+The first one, second, and third.
+
+00:11:39.800 --> 00:11:44.040
+So now let’s take care of the images themselves and their captions.
+
+00:11:45.160 --> 00:11:48.320
+Along with this exercise, you will get all the images
+
+00:11:48.320 --> 00:11:52.280
+and descriptions for the images that are used in this lesson.
+
+00:11:52.280 --> 00:11:58.760
+It’s specifically in this text file and then the images are in here.
+
+00:11:58.760 --> 00:12:02.080
+Let’s just go ahead and copy all of our images
+
+00:12:02.080 --> 00:12:06.320
+and paste them to our site, specifically to our images folder.
+
+00:12:13.080 --> 00:12:17.440
+And then the docx file itself we’re just going to open right now.
+
+00:12:35.800 --> 00:12:40.480
+As you see here, we have Slide 1, Slide 2, and Slide 3.
+
+00:12:40.480 --> 00:12:44.040
+And then down here we have the texts for the cards.
+
+00:12:44.040 --> 00:12:49.320
+All these texts that you see here, they’re all taken from Wikipedia.
+
+00:12:49.320 --> 00:12:55.040
+So you can either use this document or you could go to Wikipedia and get the text there.
+
+00:12:56.240 --> 00:12:57.320
+So what do we do?
+
+00:12:57.520 --> 00:13:02.200
+First of all, let’s indicate the paths to all of the images.
+
+00:13:03.800 --> 00:13:05.320
+Here is our first image,
+
+00:13:09.640 --> 00:13:14.520
+so we write the path as images/slider-1.jpg.
+
+00:13:16.560 --> 00:13:21.600
+Then our second image, which is going to be images/slider-2.
+
+00:13:29.200 --> 00:13:33.720
+And then the third image is images/slider-3.
+
+00:13:39.440 --> 00:13:41.080
+Then we got our captions.
+
+00:13:44.800 --> 00:13:46.800
+The first caption is Golden Gate bridge.
+
+00:13:48.120 --> 00:13:50.120
+So let’s paste that here as the header.
+
+00:13:52.240 --> 00:13:56.360
+And as for the &lt;p&gt; tag we paste here the city where the landmark is in.
+
+00:14:03.480 --> 00:14:05.480
+Then we got Niagara Falls.
+
+00:14:12.320 --> 00:14:15.920
+And Niagara Falls happens to be in two places at the same time.
+
+00:14:21.920 --> 00:14:23.920
+And finally we got Stonehenge,
+
+00:14:27.480 --> 00:14:29.480
+and then where it’s located.
+
+00:14:32.840 --> 00:14:34.840
+So let’s see what we have so far.
+
+00:14:39.080 --> 00:14:41.080
+So here we have our slider.
+
+00:14:41.240 --> 00:14:46.040
+But as you see, like the nav, it’s positioned at the beginning of the page.
+
+00:14:47.200 --> 00:14:52.720
+So then, all the content of the main tag, we’re going to wrap in a container class.
+
+00:14:53.760 --> 00:14:57.520
+So everything that’s in the main tag, we can cut for now.
+
+00:15:00.040 --> 00:15:02.440
+Create a &lt;div&gt; with class container,
+
+00:15:06.280 --> 00:15:07.640
+and then paste it back.
+
+00:15:09.360 --> 00:15:10.240
+Refresh
+
+00:15:15.400 --> 00:15:17.400
+and now we see that it shifted over.
+
+00:15:20.400 --> 00:15:21.600
+Ok, next.
+
+00:15:24.160 --> 00:15:26.160
+Next we have the cards themselves.
+
+00:15:27.680 --> 00:15:29.160
+We have 6 of them.
+
+00:15:29.160 --> 00:15:34.680
+These are actually using the bootstrap grid, so that means that each of these cards
+
+00:15:34.680 --> 00:15:39.320
+takes up 4 bootstrap columns, because 12 divided by 3 is 4.
+
+00:15:40.240 --> 00:15:41.440
+So what do we do?
+
+00:15:41.680 --> 00:15:46.240
+After our slider inside the container, let’s create a new comment.
+
+00:15:47.880 --> 00:15:49.600
+Let it just say Cards.
+
+00:15:52.040 --> 00:15:57.720
+And here we’re going to create a row, and this is where we’re going to add our cards.
+
+00:15:57.960 --> 00:16:01.520
+Every card is a col-4, and we have 6 of these.
+
+00:16:09.720 --> 00:16:11.880
+What’s the inner structure of each card?
+
+00:16:13.160 --> 00:16:19.760
+The structure is going to be standard for all the cards that we’ve seen, and it’s going to look like the following.
+
+00:16:20.720 --> 00:16:22.720
+First we have a &lt;div&gt; with class card.
+
+00:16:22.720 --> 00:16:26.240
+And then inside that we’ll have two parts:
+
+00:16:28.440 --> 00:16:32.960
+first the image that’s at the top, so we’re going to call it card-image-top,
+
+00:16:33.520 --> 00:16:37.120
+and the second part is card-body, the lower part of the card.
+
+00:16:39.320 --> 00:16:43.200
+So let’s create an &lt;img&gt; with class card-img-top.
+
+00:16:51.480 --> 00:16:53.240
+Go ahead and specify the path:
+
+00:17:00.160 --> 00:17:02.160
+images/img-1.
+
+00:17:04.600 --> 00:17:08.520
+Alt is going to be the same everywhere: Card image.
+
+00:17:12.720 --> 00:17:16.040
+And then under the image we’re going to have a card body.
+
+00:17:20.000 --> 00:17:22.000
+What does the card body consist of?
+
+00:17:24.680 --> 00:17:30.760
+It consists of a header, some regular text, and a Details button.
+
+00:17:32.080 --> 00:17:35.480
+So inside card-body we’re going to create three elements.
+
+00:17:35.480 --> 00:17:39.760
+The first is card-title, which is going to be an &lt;h4&gt; by the way.
+
+00:17:45.640 --> 00:17:48.320
+Then a &lt;p&gt; tag with class card-text.
+
+00:17:53.400 --> 00:17:56.400
+Then lastly a &lt;button&gt; with class btn
+
+00:18:05.200 --> 00:18:09.800
+and another class btn-primary – primary, because it’s blue.
+
+00:18:21.320 --> 00:18:25.280
+Ok, so the title for the first card is Eiffel Tower.
+
+00:18:25.280 --> 00:18:30.920
+But before copy pasting that, let’s generate five more of these card structures,
+
+00:18:30.920 --> 00:18:33.760
+so that we don’t have to do them over each time.
+
+00:18:33.760 --> 00:18:37.680
+So we just paste them into each of these col-4s.
+
+00:18:50.360 --> 00:18:52.360
+And now we can add the first title.
+
+00:19:00.400 --> 00:19:02.200
+And also add the text.
+
+00:19:05.080 --> 00:19:10.320
+And in all cases the button says Details. So let’s just add that everywhere right now.
+
+00:19:22.520 --> 00:19:25.280
+Ok, now onto the second landmark.
+
+00:19:25.280 --> 00:19:29.320
+Here the image path needs to change to img-2.
+
+00:19:36.120 --> 00:19:38.120
+The title is Big Ben.
+
+00:19:44.200 --> 00:19:45.840
+And here’s the description.
+
+00:19:49.480 --> 00:19:52.280
+The third image is the Statue of Liberty.
+
+00:20:05.320 --> 00:20:07.320
+And here’s the description.
+
+00:20:09.800 --> 00:20:12.800
+So with the fourth card it’s img-4.
+
+00:20:16.960 --> 00:20:18.960
+Sydney Opera House.
+
+00:20:23.560 --> 00:20:25.560
+And the title description.
+
+00:20:29.440 --> 00:20:32.160
+On to the fifth card img-5.
+
+00:20:42.200 --> 00:20:43.360
+The description.
+
+00:20:49.040 --> 00:20:50.400
+And the 6th card.
+
+00:21:05.800 --> 00:21:07.800
+And there we have it.
+
+00:21:07.800 --> 00:21:10.680
+So let’s save all this and see what we have.
+
+00:21:16.400 --> 00:21:18.400
+And you see we’ve got what we needed.
+
+00:21:21.360 --> 00:21:27.080
+But if you look at the original, you will see that here we’ve got some spacing in all these areas.
+
+00:21:27.080 --> 00:21:31.560
+And the same amount of spacing up here between the header and the slider.
+
+00:21:36.640 --> 00:21:42.000
+So let’s add here another class called mt-20, which means margin-top: 20.
+
+00:21:45.720 --> 00:21:48.200
+And we’ll add that same class to the slider.
+
+00:21:54.720 --> 00:22:04.880
+And then in CSS we just write mt-20, margin-top: 20px.
+
+00:22:08.920 --> 00:22:09.840
+Refresh.
+
+00:22:11.560 --> 00:22:14.760
+And now we’ve got the margins just like we needed.
+
+00:22:15.040 --> 00:22:17.760
+Great. So we’ve taken care of all that.
+
+00:22:20.640 --> 00:22:22.320
+Next, we have our footer.
+
+00:22:22.640 --> 00:22:26.400
+So the footer has the same background color as the header, if you look at it.
+
+00:22:28.800 --> 00:22:33.920
+So for the footer we’re going to add a class that’s going to create the same kind of background.
+
+00:22:50.320 --> 00:22:52.320
+What does the footer consist of?
+
+00:22:54.800 --> 00:23:00.880
+The footer has two parts: first is the copyright, and then the Contact Us button.
+
+00:23:02.200 --> 00:23:07.880
+So since it’s divided into two parts, first we’re going to add a container that’s going to limit the width.
+
+00:23:10.800 --> 00:23:13.400
+Then inside the container we add a row.
+
+00:23:16.800 --> 00:23:20.040
+And then inside the row: col-6*2.
+
+00:23:24.840 --> 00:23:26.840
+In the first one we’ll have our copyright.
+
+00:23:27.320 --> 00:23:30.320
+So tag p with class copy, for example.
+
+00:23:43.000 --> 00:23:45.640
+And as the text, just copy this thing.
+
+00:23:48.920 --> 00:23:51.720
+And then in the other col-6 we will have a button.
+
+00:23:51.720 --> 00:23:56.640
+Button with class btn. And since it’s blue, btn-primary.
+
+00:24:05.080 --> 00:24:07.560
+Let’s open our page to see what we’ve got.
+
+00:24:10.440 --> 00:24:13.200
+Here’s our copyright. And here’s our button.
+
+00:24:14.200 --> 00:24:18.000
+But since we didn’t add any text, it’s just a blue button.
+
+00:24:18.000 --> 00:24:20.840
+So let’s add to it: Contact Us.
+
+00:24:31.800 --> 00:24:32.520
+Save.
+
+00:24:36.320 --> 00:24:37.680
+And there’s our button.
+
+00:24:37.960 --> 00:24:44.160
+So, as you see, by default the button positions itself beginning from the left side.
+
+00:24:44.360 --> 00:24:48.560
+So since we have two columns, the second column starts somewhere here
+
+00:24:48.560 --> 00:24:50.920
+and that’s exactly where our button is.
+
+00:24:51.480 --> 00:24:56.240
+So to get it to the right side, we’re going to use some standard flexbox classes
+
+00:24:56.240 --> 00:24:58.240
+that became available with bootstrap 4.
+
+00:24:59.080 --> 00:25:05.960
+So for col-6 let’s add a class d-flex so that we know that this element will be displayed as flex.
+
+00:25:10.600 --> 00:25:15.040
+Then we need to specify that this element has to be aligned to the right.
+
+00:25:15.040 --> 00:25:18.760
+So for that let’s add class justify-content-end.
+
+00:25:29.240 --> 00:25:36.520
+And also, this button is aligned vertically to the center and that’s why we will add align-items-center.
+
+00:25:48.680 --> 00:25:51.720
+And the copyright here, All Rights Reserved,
+
+00:25:51.720 --> 00:25:55.320
+also needs to be aligned vertically towards the center.
+
+00:25:56.200 --> 00:26:01.000
+So let’s copy all these classes and add them to this col-6.
+
+00:26:03.400 --> 00:26:07.560
+But we will remove this class, because by default it gets aligned
+
+00:26:07.560 --> 00:26:11.480
+to the left, and that’s actually what we want for our copyright.
+
+00:26:11.600 --> 00:26:13.600
+Let’s see what we have now.
+
+00:26:15.680 --> 00:26:18.520
+Button’s on the right and copyright is on the left.
+
+00:26:19.480 --> 00:26:19.960
+Perfect.
+
+00:26:20.400 --> 00:26:27.320
+Next, we see that the footer has small height, its height actually equals the height of the content inside.
+
+00:26:27.320 --> 00:26:28.800
+So what do we need to write?
+
+00:26:30.840 --> 00:26:35.680
+We need to add that the footer should have a height of somewhere about 80px.
+
+00:26:39.960 --> 00:26:43.600
+And it also has a margin on the top of around 50px.
+
+00:26:56.480 --> 00:27:03.560
+And here – it already has a decent height, but the copyright and Contact Us didn’t get vertically aligned.
+
+00:27:03.560 --> 00:27:04.520
+Why is that?
+
+00:27:05.200 --> 00:27:06.520
+If we open the Inspector,
+
+00:27:08.880 --> 00:27:12.400
+you will see that class container, that’s inside the footer,
+
+00:27:12.400 --> 00:27:16.480
+it has a limited height – specifically the height of its content.
+
+00:27:18.360 --> 00:27:22.680
+So we need to set it so that its height equals that of its parent.
+
+00:27:23.040 --> 00:27:29.080
+Same thing with class row, by the way, - its height also equals that of its content.
+
+00:27:31.920 --> 00:27:38.960
+So to fix that, we need to add that footer&gt;.container, and also footer .row have a height of 100%.
+
+00:27:53.480 --> 00:27:56.040
+How is it that we can just write 100%?
+
+00:27:56.760 --> 00:27:59.360
+Because we already gave our footer a fixed height.
+
+00:28:00.040 --> 00:28:07.040
+So these 100% will mean 100% of these 80px, so 80px in other words.
+
+00:28:08.080 --> 00:28:10.080
+And now if we refresh the page,
+
+00:28:13.680 --> 00:28:15.680
+you will see that it’s all centered now.
+
+00:28:17.440 --> 00:28:19.240
+What do we have left to do?
+
+00:28:19.240 --> 00:28:24.080
+We still need this popup window that appears when we click on the Contact Us button.
+
+00:28:26.760 --> 00:28:31.760
+So, in order to get this window to work, we once again head over to the bootstrap window
+
+00:28:31.760 --> 00:28:33.760
+and look for the component called modal.
+
+00:28:34.440 --> 00:28:38.080
+We just need the most basic version of it, this one right here.
+
+00:28:44.520 --> 00:28:48.040
+And in the modal body we will add everything we need.
+
+00:28:48.600 --> 00:28:51.000
+Specifically, we need a form to go here.
+
+00:28:52.320 --> 00:28:54.800
+So let’s copy this entire block.
+
+00:28:55.280 --> 00:28:57.280
+And paste it right after &lt;main&gt;.
+
+00:29:04.400 --> 00:29:07.440
+We will also add a comment to make things more clear.
+
+00:29:12.600 --> 00:29:14.640
+And now let’s make some changes.
+
+00:29:15.040 --> 00:29:17.560
+First of all, what should our title be?
+
+00:29:17.800 --> 00:29:18.440
+Let’s see.
+
+00:29:20.640 --> 00:29:21.440
+Contact Us.
+
+00:29:27.000 --> 00:29:29.400
+And then in the body we’ll have a form.
+
+00:29:34.840 --> 00:29:37.240
+So let’s find the form component on bootstrap.
+
+00:29:44.960 --> 00:29:49.400
+And here’s a general form, from which we can pick and choose what we need.
+
+00:29:50.000 --> 00:29:53.720
+As you can see, the form consists of a number of form groups:
+
+00:29:53.720 --> 00:29:57.600
+here’s one form group, here’s another one, and so on.
+
+00:29:59.400 --> 00:30:03.840
+So this, this, and this – these are all form groups.
+
+00:30:04.360 --> 00:30:07.600
+So we’re just going to use those form groups that we need.
+
+00:30:07.920 --> 00:30:09.920
+We probably want this first one.
+
+00:30:10.120 --> 00:30:13.160
+So let’s go ahead and add that one right now.
+
+00:30:20.120 --> 00:30:23.920
+Then instead of Email Address, let’s add Your name.
+
+00:30:31.040 --> 00:30:37.560
+So let’s change the value of the “for” attribute to name, and we also need to change the id to name.
+
+00:30:38.120 --> 00:30:41.040
+Then the type isn’t email, but text.
+
+00:30:46.000 --> 00:30:48.160
+As the placeholder let’s have Name.
+
+00:31:02.200 --> 00:31:03.960
+Next we have the Phone number.
+
+00:31:04.480 --> 00:31:07.960
+The phone number has the same structure as the name, so we can just copy it.
+
+00:31:12.360 --> 00:31:15.800
+And then of course for the label we’re going to have Phone number instead.
+
+00:31:21.600 --> 00:31:22.840
+“For” will be phone.
+
+00:31:25.280 --> 00:31:27.280
+ID should also be phone then.
+
+00:31:29.200 --> 00:31:31.200
+And as the placeholder, phone.
+
+00:31:40.640 --> 00:31:42.640
+And the third part is the message field.
+
+00:31:43.800 --> 00:31:45.800
+So this is going to be a textarea.
+
+00:31:46.320 --> 00:31:50.640
+So here’s a textarea. And this is the structure for a textarea.
+
+00:31:51.040 --> 00:31:53.760
+So let’s copy it. Paste it underneath.
+
+00:31:54.720 --> 00:31:56.600
+Change this to Message.
+
+00:32:03.960 --> 00:32:05.960
+ID will be message.
+
+00:32:06.440 --> 00:32:10.040
+There. Got it. Let’s check to see if it works.
+
+00:32:18.120 --> 00:32:22.680
+And, as expected, it doesn’t. Why’s that?
+
+00:32:23.600 --> 00:32:28.320
+Because we didn’t specify which form here is supposed to bring up this button.
+
+00:32:28.920 --> 00:32:32.120
+And since the form is hidden by default, we don’t see it.
+
+00:32:32.760 --> 00:32:35.960
+So to make it work, let’s go back to our modal component.
+
+00:32:43.720 --> 00:32:47.000
+And here you can find the code needed for the button to work.
+
+00:32:48.280 --> 00:32:51.280
+And from here what do we need to add to our button?
+
+00:32:52.880 --> 00:32:58.040
+We need to add these two attributes: data-toggle= “modal” and data-target.
+
+00:32:58.200 --> 00:33:02.760
+And for data-target we’re going to specify the ID of our form.
+
+00:33:02.960 --> 00:33:04.360
+So let’s copy this.
+
+00:33:08.440 --> 00:33:13.360
+Here’s our footer. And here’s the button that should bring the form up.
+
+00:33:13.360 --> 00:33:15.720
+So here we add data-toggle and data-target.
+
+00:33:16.760 --> 00:33:21.320
+So instead of exampleModal, let’s change the id to myModal.
+
+00:33:27.480 --> 00:33:32.880
+And then for the modal window itself we’ll add id=”myModal.”
+
+00:33:34.760 --> 00:33:35.880
+And now let’s check it.
+
+00:33:41.880 --> 00:33:43.400
+And indeed it works.
+
+00:33:45.840 --> 00:33:53.320
+The only thing left is to change these two buttons – Save changes and Close – to only one button, Submit.
+
+00:34:00.040 --> 00:34:03.960
+So here in the modal block, we can delete this entire thing.
+
+00:34:07.000 --> 00:34:11.160
+And instead, inside the form we’ll add an input of type submit.
+
+00:34:16.360 --> 00:34:22.160
+And for the class we will add btn and btn-primary to display it as a blue button.
+
+00:34:28.560 --> 00:34:29.360
+Let’s save.
+
+00:34:35.360 --> 00:34:36.400
+And there’s our button.
+
+00:34:48.720 --> 00:34:50.240
+And there we have it!
+
+00:34:50.640 --> 00:34:56.960
+My congratulations! Now you know how to create a nice little website in half an hour.
+
+00:34:56.960 --> 00:34:59.240
+That’s it for now. Till next time.
+

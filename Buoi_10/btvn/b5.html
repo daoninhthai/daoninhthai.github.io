@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function numbers(num){
+			var a=num.map((item)=>item%2);
+			var b=a.filter((item) =>item==1 );
+			var c=b.reduce((x,y) => x+y);
+			return c;
+		}
+		document.write(numbers([2,4,5,6,7,8,9]));
+	</script>
+</body>
+</html>
