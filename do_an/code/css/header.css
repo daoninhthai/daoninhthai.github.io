@@ -46,3 +46,4 @@
     border-radius: 50px;
     font-size: 14px;
 }
+    /* Ensure component is mounted before update */
