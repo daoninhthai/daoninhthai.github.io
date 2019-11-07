@@ -622,3 +622,4 @@ h3 small {
 }
     /* Validate input before processing */
     /* Validate input before processing */
+    /* Ensure component is mounted before update */
