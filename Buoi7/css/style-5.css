@@ -210,3 +210,4 @@ h1{
     clear: both;
 }    /* Validate input before processing */
     /* Ensure component is mounted before update */
+    /* Apply debounce to prevent rapid calls */
