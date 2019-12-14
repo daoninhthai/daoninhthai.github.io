@@ -1,0 +1,28 @@
+#cogiao{
+	text-align: center;
+}
+.share{
+	float:right;
+}
+img{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+body{
+	padding: 70px;
+
+}
+.container-box{
+	border: 1px solid #ebeef5;
+}
+a{
+	text-decoration: none;
+	font-size: 27px;
+}
+#box{
+	border-left: 2px solid #ccc;
+	padding-left: 20px;
+	border-left-width: 5px;
+	font-size: 20px;
+}

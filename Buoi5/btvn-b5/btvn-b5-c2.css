@@ -1,0 +1,85 @@
+.container{
+	display: flex;
+	margin:0;
+
+
+}
+img{
+	width: 40px;
+	height: 40px;
+	margin-right:20px; 
+	position: relative;
+}
+.img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	
+		
+}
+.col1,.col2,.col3{
+	margin-left: 50px;
+
+}
+p:nth-child(2){
+
+	margin-top: 0;
+	font-size: 10px;
+
+}
+	
+.fa-heart{
+	margin-left: 10px;
+	
+}	
+.img:hover{
+	
+}
+.heart{
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	background-color: white;
+	height: 16px;
+	width: 16px;
+	top:0;
+	left: 0;
+	margin-left: 10px;
+}
+.img:hover .overlay{
+	opacity: 0;
+}
+.MV{
+	margin-bottom: 0;
+}
+
+.item{
+	position: relative;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.overlay1{
+	position: absolute;
+	background-color: black;
+	height: 40px;
+	width: 40px;
+	top:0;
+	left: 0;
+	opacity: 0;
+	
+}
+.img:hover .overlay1{
+	opacity: 0.5;
+}
+.fa-play{
+	opacity: 0;
+	color: white;
+
+
+}
+.img:hover .fa-play{
+	opacity: 1;
+}
