@@ -141,25 +141,28 @@ h1{
     text-align: center;
     color: aqua;
     font-size: 30px;
-    background: #000000;  
-    background: -webkit-linear-gradient(left, #434343, #000000);
-    background: -o-linear-gradient(left, #434343, #000000);
-    background: linear-gradient(to right, #434343, #000000);  
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #232526, #7E4E4E, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #232526, #7E4E4E, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .grid-menu{
   
   max-width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #232526, #7E4E4E, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #232526, #7E4E4E, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
   padding: 10px;
   justify-content: center;
   grid-gap: 3px;
   align-items: center;
 }
 .grid-item {
-  background-color: #93DFF5;
-  border: 1px solid rgba(0, 0, 0, 0.9);
+  background-color: #181616;
+  border: 1px solid aqua;
   border-radius: 5px;
   padding: 20px;
   font-size: 20px;
@@ -169,7 +172,7 @@ h1{
 }
 .grid-item p{
      text-decoration: none;
-     color:#270404 ;
+     color:aqua ;
 }
 a{
     text-decoration: none;
@@ -186,7 +189,7 @@ a{
 .img:hover{
     transform: scale(1.01);
     transition: all 0.2s;
-    box-shadow: 2px 2px 5px #311B1B;
+    box-shadow: 3px 3px 6px aqua;
 }
 
 
