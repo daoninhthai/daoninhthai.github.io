@@ -133,6 +133,7 @@ h1{
      max-width: 550px;
     margin-top: 150px;
     margin-left: 50px;
+    border-bottom: 2px solid aqua;
 }
 .button{
     margin-top: 40px;
