@@ -60,4 +60,4 @@
 	grid-column: 4/6;
 	background-color: #124514;
 	grid-row: 2/5;
-}
+}    /* Ensure component is mounted before update */
