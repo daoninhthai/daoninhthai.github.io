@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const thimau = {
+			userName:"thi mau",
+			password:"123456",
+			confirm:"123456"
+		}
+		function checkAccount(obj){
+			if (obj.userName !==''&& obj.userName.length<=20&&obj.password.length>=6 && obj.password.length<=32 &&obj.password===obj.confirm){
+				console.log("pass")
+			}
+			else{
+				console.log("fail")
+			}
+		}
+		checkAccount(thimau);
+	</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://kit.fontawesome.com/15d6788ae2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	   <label for="text-value">Add Item to List: </label><br>
+    <input type="text" id="text-value" placeholder="Insert new item ..."/>
+    <input id="new-item" type="submit" value="AddItem"/>
+    <br/><br/>
+    <label for="editItem">Edit content: </label><br>
+    <input type="text" id="editItem" placeholder="Edit-Item..." disabled/>
+    <input type="submit" id="button-save" value="Save"/>
+	<script type="text/javascript">
+		const todolist=[
+			'di sieu thi',
+			'di choi',
+			'mua sam quan ao',
+			'lam viec nha'
+		];
+
+		let ul=document.createElement('ul');
+		let display = document.getElementsByTagName('body')[0].appendChild(ul);
+		function render(list){
+			let itemlist = list.map(item =>`<li>${item}<i class="fas fa-trash" onclick="removeItem(this)"></i>  </li>`).join('');
+
+			display.innerHTML = itemlist;
+			document.getElementById('new-item').addEventListener('click',addItem)
+		}
+		render(todolist);
+
+		
+function addItem(){
+	let valueitem=document.getElementById('text-value');
+	if(valueitem.value==""){alert('chua co gi')}
+		else{
+			todolist.push(valueitem.value);
+			valueitem.value='';
+			render(todolist);
+		}
+}
+function removeItem(a){
+	for(i=0;i<todolist.length;i++){
+		if(todolist[i]==a.parentNode.innerText){
+			todolist.splice(i,1);
+		}
+	}
+	render(todolist);
+}
+
+
+		
+	</script>
+
+</body>
+</html>
