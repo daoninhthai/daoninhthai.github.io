@@ -1,0 +1,40 @@
+.top-bar{
+    padding: 40px 40px 0 40px;
+}
+.logo img{
+    height: 45px;
+    max-width: 120px;
+    text-align: center;
+}
+
+.login img{
+    height: 45px;
+    
+}
+.nav-bar{
+    padding-top: 50px;
+    
+}
+.menu{
+    padding: 0;
+    left: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap;
+    margin:20px 20px 20px 0;
+}
+.menu li a{
+    color: #fff;
+    margin: 10px;
+    font-size: 16px;
+    
+    
+}
+.search{
+    font-size: 16px;
+}
+#searchbox{
+    border-radius: 50px;
+    font-size: 14px;
+}
