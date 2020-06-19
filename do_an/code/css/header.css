@@ -15,23 +15,31 @@
     padding-top: 50px;
     
 }
+
 .menu{
+    
     padding: 0;
-    left: 0;
+    text-align: left;
     list-style-type: none;
     display: flex;
     align-items: center;
     flex-flow: nowrap;
     margin:20px 20px 20px 0;
 }
+.navbar-menu{
+    grid-column: 1/9;
+}
+
+
 .menu li a{
     color: #fff;
-    margin: 10px;
+    margin-right: 20px;
     font-size: 16px;
     
     
 }
 .search{
+    grid-column: 10/13;
     font-size: 16px;
 }
 #searchbox{
