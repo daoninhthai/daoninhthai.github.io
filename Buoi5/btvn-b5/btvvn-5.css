@@ -8,10 +8,9 @@ body{
 	width: 200px;
 	height: 200px;
 	background-color: red;
-	transform: rotate(45deg);
+	
 	position: relative;
 	animation: heart-beat 2s infinite;
-
 }
 .heart-left{
 	width: 200px;
