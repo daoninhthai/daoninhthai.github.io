@@ -5,7 +5,11 @@ $(document).ready(function() {
             alert("[Chưa nhập cái gì sao search ><]");
         } else {
             $("#searching").show();
-            setTimeout(function() { $("#searching").hide(); }, 3000);
+            setTimeout(function() {
+                $("#searching").hide();
+                document.getElementById("searchbox").value = "";
+
+            }, 3000);
         }
     });
 });
