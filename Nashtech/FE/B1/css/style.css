@@ -17,8 +17,6 @@ a {
     right: -100px;
 }
 
-.search {}
-
 .post-title a {
     color: black;
 }
@@ -37,7 +35,7 @@ a {
     gap: 10px;
 }
 
-.background-header {
+.background {
     background-image: url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
